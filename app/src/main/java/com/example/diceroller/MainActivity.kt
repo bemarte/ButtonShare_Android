@@ -23,12 +23,10 @@ class MainActivity : AppCompatActivity() {
             rollDice()
         }
     }
+    
+    //Função responsável por chamar a intent..ACTION_SEND
+    //É recomendável substituir o nome da função "rollDice()" para algo mais apropriado ao sistema à ser desenvolvido.  
     private fun rollDice() {
-//        val resultText: TextView = findViewById(R.id.result_text)
-//
-//        val randomInt = Random.nextInt(6)+1
-//
-//        resultText.text = randomInt.toString()
 
         val sendIntent: Intent = Intent().apply {
             action = Intent.ACTION_SEND
